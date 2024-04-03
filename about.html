@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .profile-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2rem;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .profile-container:hover, .profile-image:hover {
+            transform: translateY(-5px);
+        }
+
+        .navbar {
+            background-color: #2980b9; 
+        }
+
+        .nav-link, .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-brand span {
+            margin-left: 5px; 
+        }
+
+        hr {
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .btn {
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; 
+            margin-top: 2rem; 
+        }
+
+        .profile-details p {
+            flex-basis: calc(50% - 10px);
+            margin: 10px;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .sidebar {
+            background-color: #34495e;
+            color: #fff;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            width: 250px;
+            padding-top: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar a {
+            padding: 10px 20px;
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #2c3e50;
+        }
+
+        .sidebar-heading {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .content {
+            margin-left: 250px;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-heading">Menu</div>
+        <a href="website.html">Home</a>
+        <a href="profil.html">My Profile</a>
+        <a href="about.html">About Me</a>
+        <a href="jadwal.html">Class Schedule</a>
+        <a href="hobi.html">My Hobby</a>
+        <a href="register.html">Register</a>
+        <a href="index.html">Log Out</a>
+    </div>
+
+    <div class="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="Gambar Putra Pratama.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Rafi Putra<span>Website</span> <!-- Added span to separate words -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <div class="container profile-container">
+            <div class="profile-image"></div>
+            <h1 class="display-4 text-center">Tentang Saya</h1> 
+            <p class="lead text-center">Saya adalah seorang yang memiliki semangat tinggi dalam belajar dan mengeksplorasi hal-hal baru. Saya percaya bahwa pembelajaran adalah perjalanan tanpa akhir, dan saya selalu mencari peluang untuk meningkatkan pengetahuan dan keterampilan saya. Selain itu, saya juga memiliki minat dalam berbagai bidang, mulai dari teknologi informasi hingga seni dan musik. Saya suka menantang diri sendiri untuk mencoba hal-hal baru dan berusaha untuk memberikan dampak positif dalam lingkungan saya. Saya percaya bahwa dengan tekad dan kerja keras, saya dapat mencapai tujuan-tujuan yang saya tetapkan dalam hidup saya.</p>
+            <hr> 
+            <div class="profile-details">
+                <p><i class="fas fa-graduation-cap"></i> Saya sedang menempuh pendidikan D3 di Politeknik Negeri Madiun.</p>
+                <p><i class="fas fa-laptop-code"></i> Saya sedang belajar dalam pengembangan perangkat lunak dan desain web.</p>
+                <p><i class="fas fa-paint-brush"></i> Selain itu, saya juga memiliki minat dalam seni dan senang menggambar dan melukis.</p>
+                <p><i class="fas fa-music"></i> Saya juga suka mendengarkan musik, meskipun tidak bisa memainkan alat musik.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
